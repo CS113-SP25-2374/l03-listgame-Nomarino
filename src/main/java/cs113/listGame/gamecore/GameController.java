@@ -108,7 +108,7 @@ public class GameController {
     public void startGame() {
         gameObjectList.clear();
 
-        player = new PlayerObject(playerImage, new Point2D(75, 75));
+        player = new PlayerObject(playerImage);
         gameObjectList.add(player);
 
         EnemyObject enemyA = new EnemyArrayList(enemyImageA);

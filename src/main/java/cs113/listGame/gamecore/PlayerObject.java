@@ -1,19 +1,14 @@
 package cs113.listGame.gamecore;
 
-import cs113.listGame.resources.ResourceArray;
-import cs113.listGame.resources.ResourceArrayList;
-import cs113.listGame.resources.ResourceList;
-import cs113.listGame.resources.ResourceObject;
+import cs113.listGame.resources.*;
 import javafx.geometry.Point2D;
 import javafx.scene.image.ImageView;
 
 public class PlayerObject extends GameObject {
-    ResourceList resources = new ResourceArray();
+    ResourceList resources = new ResourceLinkedList();
 
-    public PlayerObject(ImageView imageView, Point2D location) {
+    public PlayerObject(ImageView imageView) {
         super(imageView);
-
-        setPosition(location);
     }
 
     @Override
